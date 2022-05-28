@@ -3,8 +3,6 @@ package com.sofka.software;
 import com.sofka.software.abstracts.Animal;
 import com.sofka.software.interfaces.AnimalInterface;
 
-import java.util.logging.Logger;
-
 public class Gato extends Animal implements AnimalInterface {
     @Override
     public void mostrarTipodeSonido() {
@@ -17,7 +15,5 @@ public class Gato extends Animal implements AnimalInterface {
     }
 
     @Override
-    public void getEstado() {
-        logger.info("El gato esta durmiendo");
-    }
+    public void getEstado() {logger.info("El gato esta durmiendo");}
 }
